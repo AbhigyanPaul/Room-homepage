@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!--
+
+  Discover innovative ways to decorate
+
+  We provide unmatched quality, comfort, and style for property owners across the country. 
+  Our experts combine form and function in bringing your vision to life. Create a room in your 
+  own style with our collection and make your property a reflection of you and what you love.
+
+  Shop now
+
+  We are available all across the globe
+
+  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+  store locator. Any questions? Don't hesitate to contact us today.
+
+  Shop now
+
+  Manufactured with the best materials
+
+  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+  experience in this industry, we understand what customers want for their home and office.
+
+  Shop now
+
+  About our furniture
+
+  Our multifunctional collection blends design and function to suit your individual taste.
+  Make each room unique, or pick a cohesive theme that best express your interests and what
+  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+  or anything in between. Product specialists are available to help you create your dream space. -->
+  <main class="main-container">
+    <div class="overlay"></div>
+    <header class="hero">
+
+      <!--Navbar-->
+      <nav class="navbar">
+        <div class="hamburger">
+          <img class="hamburger-img" src="./images/icon-hamburger.svg" alt="Hamburger-menu">
+        </div>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Room">     
+        </div>
+        <ul class="nav">
+            <li class="nav-link">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="discover">Shop</a>
+            </li>
+            <li class="nav-link">
+              <a href="about">About</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Contact</a>
+            </li>
+        </ul>
+      </nav>
+  
+  
+      <div class="carousel">
+        <div class="carousel-item active">
+          <img class="carousel-img" 
+               srcset="./images/mobile-image-hero-1.jpg 380w,
+                       ./images/desktop-image-hero-1.jpg  800w" 
+               src="./images/mobile-image-hero-1.jpg" alt="image-1">
+        </div>
+        <div class="carousel-item">
+          <img class="carousel-img" 
+              srcset="./images/mobile-image-hero-2.jpg 380w,
+                      ./images/desktop-image-hero-2.jpg  800w" 
+              src="./images/mobile-image-hero-2.jpg" alt="image-1">
+        </div>
+        <div class="carousel-item">
+          <img class="carousel-img"
+               srcset="./images/mobile-image-hero-3.jpg 380w,
+                       ./images/desktop-image-hero-3.jpg  800w" 
+                src="./images/mobile-image-hero-3.jpg" alt="image-1">
+        </div>
+          <!-- Next and previous buttons -->
+        <div class="carousel-icons">
+          <div class="carousel-icon prev">
+            <img src="./images/icon-angle-left.svg" alt="icon-angle-left">
+          </div>
+          <div class="carousel-icon next">
+            <img src="./images/icon-angle-right.svg" alt="icon-angle-right">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Section two-->
+    <section class="discover">
+      <div class="discover-text">
+        <h2>
+          Discover innovative ways to decorate
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure harum rerum, nostrum commodi expedita maxime illo quod at aspernatur molestias deserunt quos voluptate molestiae possimus voluptates quo voluptas, saepe incidunt.
+        </p>
+      </div>
+      <div class="discover-button">
+        <a href="#">SHOP NOW
+          <img src="./images/icon-arrow.svg" alt="arrow">
+        </a>
+      </div>
+    </section>
+
+    <!--about-->
+    <section class="about">
+      <section class="about-img img-dark">
+        <img src="./images/image-about-dark.jpg" alt="about img">
+      </section>
+      <div class="about-text">
+        <h3>ABOUT OUR FURNITURE</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus eos excepturi ullam numquam error quia vero iste enim quos necessitatibus molestiae officiis eius odio distinctio quaerat suscipit repellendus, incidunt optio!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum culpa quod dignissimos sit! Saepe quisquam harum molestias soluta vero quis in. Velit iste maxime repellat iure odio autem quo illo.
+        </p>
+      </div>
+      <section class="about-img img-light">
+        <img src="./images/image-about-light.jpg" alt="about img">
+      </section>
+    </section>
+  </main>
+
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>

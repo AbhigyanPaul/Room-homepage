@@ -1,0 +1,64 @@
+.carousel {
+  width: 100%;
+
+  &-item {
+    display: none;
+    width: 100%;
+    transition: 0.4s all ease-in-out;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+    transform: translateY(-100%);
+  }
+  &-icon {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    background-color: $black;
+    transition: 0.4s all linear;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-icon:hover {
+    background-color: $very-dark-grey;
+  }
+}
+.active {
+  display: block;
+}
+
+@keyframes carousel_fade {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: $mobile-breakpoint) {
+  .carousel {
+    &-item {
+      height: $row1-height;
+    }
+    &-icon {
+      height: 80px;
+      width: 80px;
+      padding: 30px;
+      transform: translateX(200%);
+    }
+  }
+}

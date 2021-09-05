@@ -1,0 +1,50 @@
+.discover {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 20px;
+  grid-area: discover;
+  min-height: 40vh;
+
+  &-text {
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      color: $dark-grey;
+      font-weight: 500;
+      line-height: 1.5rem;
+      padding: 10px 0px;
+    }
+  }
+  &-button {
+    padding: 20px 0px;
+    letter-spacing: 10px;
+    transition: 0.4s all linear;
+    a {
+      color: $black;
+    }
+  }
+  &-button:hover {
+    a {
+      color: $dark-grey;
+    }
+  }
+}
+
+@media screen and (min-width: $mobile-breakpoint) {
+  .discover {
+    margin: 40px;
+    justify-content: center;
+    padding: 20px 40px;
+
+    &-text {
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
